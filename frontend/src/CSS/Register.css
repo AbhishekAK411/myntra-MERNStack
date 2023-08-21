@@ -1,0 +1,927 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#screen{
+    width: 100%;
+    height: 12000px;
+    /* border: 2px solid black; */
+}
+
+.screen1{
+    width: 100%;
+    height: 667px;
+    background-color: rgb(253,239,234);
+}
+
+.inner-box{
+    width: 28%;
+    height: 82%;
+    /* border: 1px solid red; */
+    position: relative;
+    top: 15%;
+    display: flex;
+    margin: auto;
+    background-color: white;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.inner-image{
+    width: 100%;
+    height: 30%;
+    /* border: 1px solid red; */
+}
+
+.inner-image img{
+    width: 100%;
+}
+
+.input-area{
+    width: 100%;
+    height: 35%;
+    /* border: 1px solid red; */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-area input{
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    margin-top: 2%;
+    font-size: 1em;
+    outline: none;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+}
+
+.input-area1{
+    width: 100%;
+    height: 35%;
+    /* border: 1px solid red; */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-area1 input{
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    margin-top: 2%;
+    font-size: 1em;
+    outline: none;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+}
+
+
+
+.proceed-button{
+    width: 90%;
+    height: 10%;
+    margin: auto;
+    /* border: 1px solid blue; */
+}
+
+.proceed-button button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: rgb(201,107,104);
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgb(0,0,0,0.5);
+    color: white;
+    font-size: 1.1em;
+}
+
+
+#navbar{
+    width: 100%;
+    height: 85px;
+    /* border: 1px solid black; */
+    box-shadow: 0px 2px 10px rgb(0,0,0,0.5);
+    position: fixed;
+    margin-bottom: 45px;
+    background-color: white;
+    display: flex;
+
+}
+
+.heading-section h4{
+    white-space: nowrap;
+    font-size: 0.85em;
+}
+
+.logout_style{
+    border: none;
+    outline: none;
+    background: none;
+    scale: 1.1;
+    margin-top: 15%;
+}
+
+
+#navbar > div:nth-child(1)> img{
+    width: 140px;
+    height: 70px;
+    margin-left: 35px;
+    margin-top: 10px;
+}
+
+#navbar > div:nth-child(2){
+    display: flex;
+    margin-top: 30px;
+}
+
+#navbar > div:nth-child(2) > div{
+    margin-right: 25px;
+}
+
+#navbar > div:nth-child(3) {
+    /* border: 1px solid blue; */
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 10%;
+}
+
+#navbar > div:nth-child(3) > input{
+    width: 350px;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background-color: rgb(244, 244, 244);
+    padding: 10px;
+    font-size: 1em;
+}
+
+#navbar > div:nth-child(4){
+    display: flex;
+    margin-left: 100px;
+    margin-top: 20px;
+
+}
+#navbar > div:nth-child(4) > div{
+    margin-right: 15px;
+}
+#navbar > div:nth-child(4) > div > i{
+    color: grey;
+    margin-left: 30%;
+
+}
+
+#navbar > div:nth-child(4) > div > h5{
+    text-align: center;
+}
+
+
+#slideshow > img{
+    width: 100%;
+    height: 370px;
+    margin-top: 120px;
+    margin-bottom: 70px;
+}
+
+#dday{
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+#dday > h1{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: rgb(46,46,46);
+}
+
+#deals{
+    display: flex;
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+#deals > div{
+    width: 20%;
+    height: 250px;
+}
+
+#deals > div > img{
+    width: 100%;
+    height: 100%;
+}
+
+#exc-brands{
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+#exc-brands > h1{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: rgb(46,46,46);
+}
+
+#brandimg{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 70px;
+}
+
+#brandimg > div{
+    width: 12.5%;
+    height: 250px;
+    
+}
+
+#brandimg > div > img{
+    width: 100%;
+    height: 100%;
+}
+
+#tpicks{
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+#tpicks > h1{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: rgb(46,46,46);
+}
+
+#picks{
+    display: flex;
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+#picks > div{
+    width: 20%;
+    height: 250px;
+
+}
+
+#picks > div > img{
+    width: 100%;
+    height: 100%;
+}
+
+#categories{
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+#categories > h1{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: rgb(46,46,46);
+}
+
+#category{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 70px;
+}
+
+#category > div{
+    width: 12.5%;
+    height: 220px;
+    background-color: #f6f6f6;
+}
+
+#category > div > img{
+    width: 100%;
+    height: 90%;
+}
+
+#dealsOnTopBrands{
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+#dealsOnTopBrands > h1{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: rgb(46,46,46);
+}
+
+#dealsimg{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 70px;
+}
+
+#dealsimg > div{
+    width: 12.5%;
+    height: 300px;
+}
+
+#dealsimg > div > img{
+    width: 100%;
+    height: 100%;
+}
+
+#slashprice{
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+#slashprice > h1{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: rgb(46,46,46);
+}
+
+#slashimg{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 70px;
+}
+
+#slashimg > div{
+    width: 14.27%;
+    height: 250px;
+}
+
+#slashimg > div > img{
+    width: 100%;
+    height: 100%;
+}
+
+#bbuys{
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+#bbuys > h1{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: rgb(46,46,46);
+}
+
+#buyimg{
+    display: flex;
+    width: 100%;
+    flex-wrap:wrap;
+    margin-bottom: 70px;
+}
+
+#buyimg > div{
+
+    width: 12.5%;
+    height: 200px;
+}
+
+#buyimg > div > img{
+    width:100%;
+    height: 100%;
+
+
+}
+
+#luxe{
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+#luxe > h1{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: rgb(46,46,46);
+}
+
+#luxeimg{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 70px;
+}
+
+#luxeimg > div{
+    width: 12.5%;
+    height: 200px;
+}
+
+#luxeimg > div > img{
+    width: 100%;
+    height: 100%;
+}
+
+#gcards{
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+#gcards > h1{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: rgb(46,46,46);
+}
+
+
+#gcardimg{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 70px;
+}
+
+#gcardimg > div{
+    width: 25%;
+    height: 250px;
+}
+
+#gcardimg > div:nth-child(5){
+    width: 12.5%;
+    height: 250px;
+}
+#gcardimg > div:nth-child(6){
+    width: 12.5%;
+    height: 250px;
+}
+#gcardimg > div:nth-child(7){
+    width: 12.5%;
+    height: 250px;
+}
+#gcardimg > div:nth-child(8){
+    width: 12.5%;
+    height: 250px;
+}
+#gcardimg > div:nth-child(9){
+    width: 12.5%;
+    height: 250px;
+}
+#gcardimg > div:nth-child(10){
+    width: 12.5%;
+    height: 250px;
+}
+#gcardimg > div:nth-child(11){
+    width: 12.5%;
+    height: 250px;
+}
+#gcardimg > div:nth-child(12){
+    width: 12.5%;
+    height: 250px;
+}
+
+#gcardimg > div > img{
+    width: 100%;
+    height: 100%;
+}
+
+#stylecast{
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+#stylecast > h1{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: rgb(46,46,46);
+}
+
+#castimg{
+    display: flex;
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+#castimg > div{
+    width: 20%;
+    height: 250px;
+}
+
+#castimg > div > img{
+    width: 100%;
+    height: 100%;
+}
+
+#hertrends{
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+#hertrends > h1{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: rgb(46,46,46);
+}
+
+#trendimg{
+    display: flex;
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+#trendimg > div{
+    width: 12.5%;
+    height: 250px;
+}
+
+#trendimg > div > img{
+    width: 100%;
+    height: 100%;
+}
+
+#himtrends{
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+#himtrends > h1{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: rgb(46,46,46);
+}
+
+#trendimghim{
+    display: flex;
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+#trendimghim > div{
+    width: 12.5%;
+    height: 250px;
+}
+
+#trendimghim > div > img{
+    width: 100%;
+    height: 100%;
+}
+
+#kidwear{
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+#kidwear > h1{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: rgb(46,46,46);
+}
+
+#kidimg{
+    display: flex;
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+#kidimg > div{
+    width: 20%;
+    height: 250px;
+}
+
+#kidimg > div > img{
+    width: 100%;
+    height: 100%;
+}
+
+#topbrand{
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+#topbrand > h1{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: rgb(46,46,46);
+}
+
+#topbrandimg{
+    display: flex;
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+#topbrandimg > div{
+    width: 12.5%;
+    height: 210px;
+}
+
+#topbrandimg > div > img{
+    width: 100%;
+    height: 100%;
+}
+
+#ocassion{
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+#ocassion > h1{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: rgb(46,46,46);
+}
+
+#occimg{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 70px;
+}
+
+#occimg > div{
+    width: 25%;
+    height: 240px;
+}
+
+#occimg > div > img{
+    width: 100%;
+    height: 100%;
+}
+
+#beauty{
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+#beauty > h1{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: rgb(46,46,46);
+}
+
+#beautyimg{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 70px;
+}
+
+#beautyimg > div{
+    width: 25%;
+    height: 240px;
+}
+
+#beautyimg > div > img{
+    width: 100%;
+    height: 100%;
+}
+
+#miss{
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+#miss > h1{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: rgb(46,46,46);
+}
+
+#missimg{
+    display: flex;
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+#missimg > div{
+    width: 12.5%;
+    height: 250px;
+}
+
+#missimg > div > img{
+    width: 100%;
+    height: 100%;
+}
+
+#color{
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+#color > h1{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: rgb(46,46,46);
+}
+
+#colorimg{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 70px;
+}
+
+#colorimg > div{
+    width: 25%;
+    height: 240px;
+}
+
+#colorimg > div > img{
+    width: 100%;
+    height: 100%;
+}
+
+#influencer{
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+#influencer > h1{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: rgb(46,46,46);
+}
+
+#infimg{
+    display: flex;
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+#infimg > div{
+    width: 16.67%;
+    height: 180px;
+}
+
+#infimg > div > img{
+    width: 100%;
+    height: 100%;
+}
+
+#budget{
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+#budget >h1{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: rgb(46,46,46);
+}
+
+#budgetimg{
+    display: flex;
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+#budgetimg > div{
+    width: 12.5%;
+    height: 220px;
+}
+
+#budgetimg > div > img{
+    width: 100%;
+    height: 100%;
+}
+
+#outfit{
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+#outfit > h1{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: rgb(46,46,46);
+}
+
+#outfitimg{
+    display: flex;
+    width: 100%;
+}
+
+#outfitimg > div{
+    width: 12.5%;
+    height: 240px;
+}
+
+#outfitimg > div > img{
+    width: 100%;
+    height: 100%;
+}
+
+#footer{
+    width: 100%;
+    height: 500px;
+    margin-top: 50px;
+    /* border: 1px solid black; */
+}
+
+#footer > div{
+    margin: 70px 70px;
+    /* border: 1px solid red; */
+    height: 400px;
+    display: flex;
+}
+
+#footer > div > div{
+    margin: 40px 40px;
+    /* border: 1px solid red; */
+    height: 100%;
+}
+
+#footer > div > div:nth-child(1) > h4{
+    font-size: 0.8em;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#footer > div > div:nth-child(1) > h5{
+    font-size: 0.8em;
+    text-transform: capitalize;
+    font-weight: 200;
+    color: rgb(46,46,46);
+}
+
+#footer > div > div:nth-child(1) >h5:nth-child(8){
+    margin-bottom: 20px;
+}
+
+
+#footer > div > div:nth-child(2) > h4{
+    font-size: 0.8em;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#footer > div > div:nth-child(2) > h5{
+    font-size: 0.8em;
+    text-transform: capitalize;
+    font-weight: 200;
+    color: rgb(46,46,46);
+}
+
+#footer > div > div:nth-child(3){
+    width: 25%;
+}
+
+#footer > div > div:nth-child(3) > h4{
+    font-size: 0.8em;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#footer > div > div:nth-child(3) > div{
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+    /* border: 1px solid blue; */
+}
+
+#footer > div > div:nth-child(3) > div > img{
+    width: 50%;
+    height: 50px;
+}
+
+#footer > div > div:nth-child(3) > div > i{
+    margin-right: 10px;
+    color: grey;
+}
+
+#footer > div > div:nth-child(4){
+    margin-left: 50px;
+}
+
+#footer > div > div:nth-child(4) > div:nth-child(1){
+    width: 53%;
+    margin-bottom: 60px;
+}
+
+#footer > div > div:nth-child(4) > div:nth-child(1) > h4{
+    font-size: 0.8em;
+    /* text-transform: uppercase; */
+    /* font-weight: bold; */
+    color: rgb(46,46,46);
+}
+
+#footer > div > div:nth-child(4) > div:nth-child(1) > h4 > b{
+    font-size: 1.1em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#footer > div > div:nth-child(4) > div:nth-child(2){
+    width: 53%;
+}
+
+#footer > div > div:nth-child(4) > div:nth-child(2) > h4{
+    font-size: 0.8em;
+    color: rgb(46,46,46);
+}
+
+#footer > div > div:nth-child(4) > div:nth-child(2) > h4 > b{
+    font-size: 1.1em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+
